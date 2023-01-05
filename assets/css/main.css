@@ -3530,8 +3530,8 @@ h6 {
 }
 
 .main-slider .swiper-slide .container {
-  padding-top: 162.5px;
-  padding-bottom: 182.5px;
+  padding-top: 90px;
+  padding-bottom: 80px;
 }
 
 @media (max-width: 991px) {
@@ -3998,8 +3998,8 @@ h6 {
 .page-header .container {
   position: relative;
   z-index: 10;
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
 }
 
@@ -5421,8 +5421,8 @@ h6 {
 
 @media (min-width: 1200px) {
   .project-details {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -7334,8 +7334,8 @@ h6 {
 
 @media (min-width: 992px) {
   .about-three {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 }
 
