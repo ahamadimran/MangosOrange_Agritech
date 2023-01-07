@@ -6108,10 +6108,7 @@ h6 {
   transition: 500ms ease;
 }
 
-.service-one__box:hover > img {
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
-}
+
 
 .service-one__box-content {
   width: calc(100% - 40px);
