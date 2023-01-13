@@ -1407,7 +1407,7 @@
 
 .blog-sidebar__search form {
   width: 100%;
-  height: 90px;
+  height: 60px;
   background-color: var(--thm-primary);
   border-radius: 5px;
   position: relative;
@@ -7565,9 +7565,9 @@ h6 {
 
 @media (min-width: 1200px) {
   .feature-one__check-list li > i {
-    font-size: 22px;
-    width: 52px;
-    height: 52px;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
   }
 }
 
