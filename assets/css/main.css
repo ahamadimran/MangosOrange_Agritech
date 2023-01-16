@@ -6374,7 +6374,7 @@ h6 {
   margin: 0;
   font-size: 15px;
   line-height: 1.875;
-  color: #6e7673;
+  color: #000;
 }
 
 @media (min-width: 768px) {
@@ -7441,6 +7441,7 @@ h6 {
 
 .about-three__summery p {
   margin: 0;
+  color: #000;
 }
 
 @media (min-width: 1200px) {
@@ -7505,6 +7506,7 @@ h6 {
 
 .feature-one__summery p {
   margin: 0;
+  color: #000;
 }
 
 .feature-one__check-list {
