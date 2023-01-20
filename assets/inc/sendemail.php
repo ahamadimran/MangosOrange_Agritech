@@ -5,7 +5,7 @@ define( "RECIPIENT_NAME", "Mangosorange Agritech India Private Limited" );
 define( "RECIPIENT_EMAIL", "info@mangosorangeagritech.in" );
 
 // Read the form values
-$success = false;
+$success = true;
 $name = isset( $_POST['name'] ) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "", $_POST['name'] ) : "";
 $senderEmail = isset( $_POST['email'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['email'] ) : "";
 $phone = isset( $_POST['phone'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['phone'] ) : "";
@@ -27,12 +27,12 @@ if ($subject) {$body .= 'Subject: '. $subject . "\r\n"; }
 //if ($address) {$body .= 'Address: '. $address . "\r\n"; }
 //if ($website) {$body .= 'Website: '. $website . "\r\n"; }
 
-$body .= 'message: ' . "\r\n" . $message;
+//$body .= 'message: ' . "\r\n" . $message;
 
 
 
 // If all values exist, send the email
-if ( $name && $senderEmail && $message ) {
+if ( $name && $senderEmail ) {
   $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
   $headers = "From: " . $name . " <" . $senderEmail . ">";  
   $success = mail( $recipient, $mail_subject, $body, $headers );
