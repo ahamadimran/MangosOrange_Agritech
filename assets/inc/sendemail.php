@@ -1,19 +1,19 @@
 <?php
 
 // Define some constants
-define( "RECIPIENT_NAME", "Mangosorange Agritech" );
-define( "RECIPIENT_EMAIL", "info@mangosorange.com" );
+define( "RECIPIENT_NAME", "Mangosorange Agritech India Private Limited" );
+define( "RECIPIENT_EMAIL", "info@mangosorangeagritech.in" );
 
 // Read the form values
 $success = false;
 $name = isset( $_POST['name'] ) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "", $_POST['name'] ) : "";
 $senderEmail = isset( $_POST['email'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['email'] ) : "";
 $phone = isset( $_POST['phone'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['phone'] ) : "";
-$services = isset( $_POST['services'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['services'] ) : "";
+//$services = isset( $_POST['services'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['services'] ) : "";
 $subject = isset( $_POST['subject'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['subject'] ) : "";
-$address = isset( $_POST['address'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['address'] ) : "";
-$website = isset( $_POST['website'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['website'] ) : "";
-$message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : "";
+//$address = isset( $_POST['address'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['address'] ) : "";
+//$website = isset( $_POST['website'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['website'] ) : "";
+//$message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : "";
 
 $mail_subject = 'A contact request send by ' . $name;
 
@@ -22,10 +22,10 @@ $body .= 'Email: '. $senderEmail . "\r\n";
 
 
 if ($phone) {$body .= 'Phone: '. $phone . "\r\n"; }
-if ($services) {$body .= 'services: '. $services . "\r\n"; }
+//if ($services) {$body .= 'services: '. $services . "\r\n"; }
 if ($subject) {$body .= 'Subject: '. $subject . "\r\n"; }
-if ($address) {$body .= 'Address: '. $address . "\r\n"; }
-if ($website) {$body .= 'Website: '. $website . "\r\n"; }
+//if ($address) {$body .= 'Address: '. $address . "\r\n"; }
+//if ($website) {$body .= 'Website: '. $website . "\r\n"; }
 
 $body .= 'message: ' . "\r\n" . $message;
 
