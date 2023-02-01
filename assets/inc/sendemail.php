@@ -14,6 +14,7 @@ $subject = isset( $_POST['subject'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", 
 //$address = isset( $_POST['address'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['address'] ) : "";
 //$website = isset( $_POST['website'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['website'] ) : "";
 //$message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : "";
+$dropdown = isset($_POST['dropdown']) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "", $_POST['dropdown'] ) : "";
 $file = isset($_POST['file']) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "", $_POST['file'] ) : "";
 
 $mail_subject = 'A contact request send by ' . $name;
